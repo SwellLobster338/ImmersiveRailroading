@@ -9,10 +9,11 @@ import cam72cam.mod.config.ConfigFile.Range;
 @Name("general")
 @File("immersiverailroading_sound.cfg")
 public class ConfigSound {
-	@Comment("Sound Distance Multiplier")
+	@Comment("Sound Distance Multiplier and sound override setting")
 	@Range(min = 0.25, max = 10)
 	public static double soundDistanceScale = 1;
-
+	public static boolean overrideSoundChannels = false;
+	
 	@Comment("Scales sound emitted by rolling stock to the gauge they are on.  Requres restart.")
 	public static boolean scaleSoundToGauge = true;
 
