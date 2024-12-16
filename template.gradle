@@ -31,10 +31,10 @@ publishing {
     }
     repositories {
         maven {
-            url "sftp://teamopenindustry.cc:22/var/www/html/maven/"
+            url "sftp://mc.swlbst.ru:22/home/sftp"
             credentials {
-                username = "mavenci"
-                password = System.getenv("MAVENCI_PASS")
+                username = "sftp"
+                password = passwd
             }
         }
     }
